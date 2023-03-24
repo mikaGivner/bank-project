@@ -18,15 +18,22 @@ const UserSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please add a credit"],
   },
-
-  toJSON: {
-    virtuals: true,
-    transform: function (_, ret) {
-      ret.id = ret._id;
-      delete ret._id;
-      delete ret._v;
-    },
-  },
+  // toJSON: {
+  //   // virtuals: true,
+  //   transform: function (_, ret) {
+  //     ret.id = ret._id;
+  //     delete ret._id;
+  //     delete ret._v;
+  //   },
+  // },
+  // toObject: {
+  //   // virtuals: true,
+  //   transform: function (_, ret) {
+  //     ret.id = ret._id;
+  //     delete ret._id;
+  //     delete ret.__v;
+  //   },
+  // },
 });
 
 // RestaurantsSchema.pre("save", function (next) {
