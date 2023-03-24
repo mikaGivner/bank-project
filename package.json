@@ -12,7 +12,6 @@
   "author": "Mika Givner",
   "license": "MIT",
   "devDependencies": {
-    "colors": "^1.4.0",
     "concurrently": "^7.6.0"
   },
   "dependencies": {
